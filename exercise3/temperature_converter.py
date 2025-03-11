@@ -6,7 +6,7 @@ Temperature = Union[int, float]
 
 
 def celsius_to_fahrenheit(celsius: Temperature) -> float:
-    return round(celsius*9/5 + 32 , 2)
+    
     """
     Convert temperature from Celsius to Fahrenheit.
 
@@ -19,11 +19,11 @@ def celsius_to_fahrenheit(celsius: Temperature) -> float:
         Temperature in Fahrenheit (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    return round(celsius*9/5 + 32 , 2)
 
 
 def fahrenheit_to_celsius(fahrenheit: Temperature) -> float:
-    return round((fahrenheit - 32)*5/9, 2)
+    
     """
     Convert temperature from Fahrenheit to Celsius.
 
@@ -36,11 +36,11 @@ def fahrenheit_to_celsius(fahrenheit: Temperature) -> float:
         Temperature in Celsius (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    return round((fahrenheit - 32)*5/9, 2)
 
 
 def celsius_to_kelvin(celsius: Temperature) -> float:
-    return round(celsius + 273,15 , 2)
+    
     """
     Convert temperature from Celsius to Kelvin.
 
@@ -53,11 +53,11 @@ def celsius_to_kelvin(celsius: Temperature) -> float:
         Temperature in Kelvin (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    return round(celsius + 273,15 , 2)
 
 
 def kelvin_to_celsius(kelvin: Temperature) -> float:
-    return round(kelvin - 273,15 if kelvin >=0 else "ValueError kelvin  less than 0",2)
+    
     """
     Convert temperature from Kelvin to Celsius.
 
@@ -73,4 +73,4 @@ def kelvin_to_celsius(kelvin: Temperature) -> float:
         ValueError: If kelvin is less than 0 (below absolute zero)
     """
     # TODO: Implement this function
-    pass
+    return round(kelvin - 273,15,2) if kelvin >=0 else "ValueError kelvin  less than 0"
